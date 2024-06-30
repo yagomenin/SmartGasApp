@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmartGas</string>
+    <string name="fuelone">Km/L</string>
+    <string name="fuel_two">Km/L</string>
+    <string name="buscar">buscar</string>
+    <string name="calcular">Calcular</string>
+    <string name="erro_fuel">Por favor, selecione o combustível </string>
+    <string name="erro_price">Por favor, passe o valor do combustível </string>
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaCombustivelActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edFuelOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_gas">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fuelOne"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/fuelone"
+            android:paddingStart="45dp"
+            />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btSearch"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/buscar"
+        android:textColor="@color/white"
+        android:backgroundTint="?attr/colorPrimary"
+        app:icon="@drawable/ic_search"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/edFuelOne"
+        app:layout_constraintStart_toEndOf="@+id/edFuelOne"
+        app:layout_constraintTop_toTopOf="@+id/edFuelOne"
+        app:layout_constraintVertical_bias="0.461"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edFuelTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edFuelOne"
+        app:startIconDrawable="@drawable/ic_gas">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fuelTwo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/fuel_two"
+            android:paddingStart="45dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btSearchTwo"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/buscar"
+        android:textColor="@color/white"
+        android:backgroundTint="?attr/colorPrimary"
+        app:icon="@drawable/ic_search"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/edFuelTwo"
+        app:layout_constraintStart_toEndOf="@+id/edFuelTwo"
+        app:layout_constraintTop_toTopOf="@+id/edFuelTwo"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tvPriceOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edFuelTwo"
+        app:startIconDrawable="@drawable/ic_money">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/priceOne"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Insira um valor em reais"
+            android:paddingStart="45dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tvPriceTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPriceOne"
+        app:startIconDrawable="@drawable/ic_money">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/priceTwo"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Insira um valor em reais"
+            android:paddingStart="45dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btCalculate"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="@string/calcular"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceTwo"/>
+
+    <Button
+        android:id="@+id/btClean"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:text="Limpar"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toEndOf="@id/btCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceTwo" />
+
+    <TextView
+        android:id="@+id/tvResultOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCalculate" />
+
+    <TextView
+        android:id="@+id/tvResultTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultOne" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

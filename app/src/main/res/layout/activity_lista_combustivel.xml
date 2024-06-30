@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListaCombustivelActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.button.MaterialButton
+                style="?attr/borderlessButtonStyle"
+                android:id="@+id/btInsertGasolina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:paddingEnd="100dp"
+                android:text="Inserir"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGasolineVal" />
+
+            <TextView
+                android:id="@+id/vtGasolineTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Gasolina"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvGasolineVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:text="12KM"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vtGasolineTittle" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="141dp"
+                android:layout_height="116dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@+id/tvGasolineVal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_gas" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintCard2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.button.MaterialButton
+                style="?attr/borderlessButtonStyle"
+                android:id="@+id/btInsertEtanol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:paddingEnd="100dp"
+                android:text="Inserir"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEtanolVal" />
+
+            <TextView
+                android:id="@+id/vtEtanolTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Etanol"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEtanolVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:text="9KM"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vtEtanolTittle" />
+
+            <ImageView
+                android:layout_width="141dp"
+                android:layout_height="116dp"
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@+id/tvEtanolVal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_gas" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintCard3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.button.MaterialButton
+                style="?attr/borderlessButtonStyle"
+                android:id="@+id/btInsertDiesel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:paddingEnd="100dp"
+                android:text="Inserir"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDieselVal" />
+
+            <TextView
+                android:id="@+id/vtDieselTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Diesel"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDieselVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:text="10KM"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vtDieselTittle" />
+
+            <ImageView
+                android:layout_width="141dp"
+                android:layout_height="116dp"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@+id/tvDieselVal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_gas" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintCard4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.button.MaterialButton
+                style="?attr/borderlessButtonStyle"
+                android:id="@+id/btInsertGas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:paddingEnd="100dp"
+                android:text="Inserir"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGasVal" />
+
+            <TextView
+                android:id="@+id/vtGasTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Gas"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvGasVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:text="7KM"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vtGasTittle" />
+
+            <ImageView
+                android:layout_width="141dp"
+                android:layout_height="116dp"
+                android:layout_marginStart="152dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@+id/tvGasVal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_gas" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
